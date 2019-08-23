@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vacation All I Ever Wanted</title>
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Vacation Parks Getaway</h1>
+    </header>
+    <main>
+        <section class="park-search">
+            <h2>Search</h2>
+            <p>Enter search terms here. Please insert state in two-letter format, separated by commas with no spaces between them.</p>
+        <form id="park-search">
+                <label for="state-query">Parks in State(s)</label>
+                <input type="text" name="state-query" id="state-query" placeholder="eg NY,CO,MN">
+                <label for="limit">Limit Results to</label>
+                <input type="number" id="limit" placeholder="10 (default)">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="js-park-error hidden"><h2>Error!</h2></section>
+        <section class="js-park-result hidden"><h2>Results</h2></section>
+    </main>
+    <footer></footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+<script src="scripts/store.js" type="text/javascript"></script>
+<script src="scripts/index.js" type="text/javascript"></script>
+</body>
+</html>
